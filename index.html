@@ -5,10 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Perfit Industry - Clothing Manufacturer & Supplier</title>
   <link rel="stylesheet" href="landing.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <header>
     <div class="logo">Perfit Industry</div>
+    <button class="nav-toggle" aria-label="Open navigation menu">
+      &#9776;
+    </button>
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
@@ -188,10 +192,55 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 Perfit Industry. All rights reserved.</p>
+    
+  <div class="footer-container">
+    <div class="footer-col">
+      <h3>Perfit Industry</h3>
+      <p>Your trusted partner for quality custom apparel manufacturing worldwide. We deliver excellence in every stitch.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#shipping">Shipping</a></li>
+        <li><a href="#payment">Payment</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <p>Email: perfitindustry@gmail.com</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="https://instagram.com" target="https://www.instagram.com/perfitindustry?igsh=YXFmenJ3d2hqdTM5"><i class="fa fa-instagram"></i></a>
+        <a href="https://tiktok.com" target="https://www.tiktok.com/@perfitindustry?_t=ZS-8yS4JmNG1UG&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Perfit Industry. All rights reserved. | Designed with ❤️ for fashion brands.</p>
+  </div>
+
   </footer>
 
   <script src="landing.js"></script>
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('header nav');
+  navToggle.addEventListener('click', function() {
+    nav.classList.toggle('open');
+  });
+});
+   
+</script>
 </body>
 </html>
-
